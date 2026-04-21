@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Kumar | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <button id="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="Certificate" />
+  </div>
+
+  <nav>
+    <div style="color:#e5e7eb">My Portfolio</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <button id="themeIcon" class="theme-btn" onclick="toggleTheme()">🌞</button>
+    </div>
+  </nav>
+
+  <header id="about">
+    <img src="Harsh Linkdin DP.png" />
+    <h1>Harsh Kumar</h1>
+    <div id="typing" class="typing"></div>
+    <div class="line"></div>
+
+    <div class="about-box">
+      <h1>About Me</h1>
+      <p>I am <span class="highlight">Harsh Kumar</span>.
+        I'm an <b>AI & ML</b> enthusiast currently pursuing <b>Computer Science</b>,<br> 
+        with knowledge of <b>Python, Java, C, SQL, and CSS</b>. With a basic grasp of backend<br> 
+        development, I enjoy creating projects that blend logic, data, and user experience.
+      </p>
+      <div class="about-info">
+        🎓 B.Tech CSE in AI & ML (2025 – 2029)<br>
+        📍 Lovely Professional University, Jalandhar<br>
+      </div>
+    </div>
+    <div class="resume-box">
+      <a href="Harsh Resume.jpg" download="Harsh Resume.jpg" class="about-btn">📜 Download Resume</a>
+    </div>
+  </header>
+
+  <section id="skills" class="reveal">
+    <h1>Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-head"><span>Python</span><span>90%</span></div>
+        <div class="bar"><span style="width:90%"></span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><span>HTML</span><span>94%</span></div>
+        <div class="bar"><span style="width:94%"></span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><span>CSS</span><span>88%</span></div>
+        <div class="bar"><span style="width:88%"></span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><span>JavaScript</span><span>75%</span></div>
+        <div class="bar"><span style="width:75%"></span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><span>C</span><span>70%</span></div>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><span>MySQL</span><span>85%</span></div>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experience" class="reveal">
+    <h1>Work Experience</h1>
+    <div class="edu-timeline">
+      <div class="edu-card">
+        <div class="edu-icon">💼</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>ABC Corp</h3>
+            <span class="edu-date">2025 – Present</span>
+          </div>
+          <p class="edu-degree">Role / Position</p>
+          <p class="edu-location">📍 Location</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="internship" class="reveal">
+    <h1>Internship</h1>
+    <div class="edu-timeline">
+      <div class="edu-card">
+        <div class="edu-icon">🚀</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>XYZ</h3>
+            <span class="edu-date">Summer 2026</span>
+          </div>
+          <p class="edu-degree">Intern Role</p>
+          <p class="edu-location">📍 Location</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h1>Projects</h1>
+    <div class="projects-grid">
+
+      <!-- Project 1: E-Commerce UI -->
+      <div class="proj-card">
+        <div class="proj-img">
+          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <linearGradient id="pg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#1a1a2e" />
+                <stop offset="100%" style="stop-color:#16213e" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#pg1)" />
+            <!-- Nav bar -->
+            <rect x="0" y="0" width="400" height="28" fill="#0f3460" rx="0" />
+            <circle cx="20" cy="14" r="5" fill="#c084fc" />
+            <rect x="35" y="10" width="60" height="8" rx="4" fill="#22d3ee" opacity=".7" />
+            <rect x="280" y="8" width="40" height="12" rx="6" fill="#c084fc" opacity=".8" />
+            <rect x="330" y="8" width="30" height="12" rx="6" fill="#22d3ee" opacity=".6" />
+            <!-- Product cards -->
+            <rect x="15" y="40" width="80" height="100" rx="8" fill="#1e2a45" stroke="#c084fc" stroke-width="1" />
+            <rect x="20" y="45" width="70" height="50" rx="5" fill="#0f3460" />
+            <circle cx="55" cy="70" r="18" fill="#c084fc" opacity=".3" />
+            <polygon points="55,58 65,70 55,82 45,70" fill="#c084fc" opacity=".8" />
+            <rect x="20" y="100" width="50" height="6" rx="3" fill="#e5e7eb" opacity=".7" />
+            <rect x="20" y="112" width="35" height="5" rx="3" fill="#22d3ee" opacity=".8" />
+            <rect x="20" y="122" width="70" height="12" rx="6" fill="#c084fc" opacity=".7" />
+            <!-- card 2 -->
+            <rect x="110" y="40" width="80" height="100" rx="8" fill="#1e2a45" stroke="#22d3ee" stroke-width="1" />
+            <rect x="115" y="45" width="70" height="50" rx="5" fill="#0f3460" />
+            <circle cx="150" cy="70" r="18" fill="#22d3ee" opacity=".2" />
+            <rect x="138" y="62" width="24" height="16" rx="3" fill="#22d3ee" opacity=".8" />
+            <rect x="144" y="78" width="12" height="8" rx="2" fill="#22d3ee" opacity=".6" />
+            <rect x="115" y="100" width="50" height="6" rx="3" fill="#e5e7eb" opacity=".7" />
+            <rect x="115" y="112" width="35" height="5" rx="3" fill="#c084fc" opacity=".8" />
+            <rect x="115" y="122" width="70" height="12" rx="6" fill="#22d3ee" opacity=".7" />
+            <!-- card 3 -->
+            <rect x="205" y="40" width="80" height="100" rx="8" fill="#1e2a45" stroke="#c084fc" stroke-width="1" />
+            <rect x="210" y="45" width="70" height="50" rx="5" fill="#0f3460" />
+            <circle cx="245" cy="70" r="18" fill="#c084fc" opacity=".2" />
+            <circle cx="245" cy="65" r="8" fill="#c084fc" opacity=".7" />
+            <rect x="236" y="76" width="18" height="12" rx="2" fill="#c084fc" opacity=".5" />
+            <rect x="210" y="100" width="50" height="6" rx="3" fill="#e5e7eb" opacity=".7" />
+            <rect x="210" y="112" width="35" height="5" rx="3" fill="#22d3ee" opacity=".8" />
+            <rect x="210" y="122" width="70" height="12" rx="6" fill="#c084fc" opacity=".7" />
+            <!-- Cart icon right -->
+            <rect x="305" y="40" width="80" height="100" rx="8" fill="#0f3460" stroke="#22d3ee" stroke-width="1"
+              stroke-dasharray="4" />
+            <text x="345" y="85" font-size="28" text-anchor="middle" fill="#22d3ee" opacity=".5">🛒</text>
+            <rect x="315" y="100" width="60" height="6" rx="3" fill="#22d3ee" opacity=".3" />
+            <rect x="320" y="112" width="50" height="6" rx="3" fill="#22d3ee" opacity=".2" />
+            <!-- label -->
+            <rect x="0" y="158" width="400" height="42" fill="#0a0a14" opacity=".8" />
+            <text x="20" y="178" font-family="Arial" font-size="12" fill="#22d3ee">🛍 Amazon-Style E-Commerce UI</text>
+            <text x="20" y="194" font-family="Arial" font-size="10" fill="#c084fc" opacity=".7">HTML • CSS •
+              JavaScript</text>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <h3>Amazon-Style E-Commerce UI</h3>
+          <p>A fully responsive e-commerce interface replicating core Amazon features — product listings, search
+            filtering, cart UI, and dynamic content rendering using vanilla JavaScript.</p>
+          <div class="proj-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/HarshAgrahari07" target="_blank" class="proj-btn">⌥ GitHub</a>
+            <span class="proj-date">Nov 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: AI Chatbot -->
+      <div class="proj-card">
+        <div class="proj-img">
+          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <linearGradient id="pg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0d1117" />
+                <stop offset="100%" style="stop-color:#161b22" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#pg2)" />
+            <!-- chat window -->
+            <rect x="20" y="10" width="360" height="175" rx="12" fill="#1c1f26" stroke="#22d3ee" stroke-width="1"
+              opacity=".8" />
+            <!-- header -->
+            <rect x="20" y="10" width="360" height="36" rx="12" fill="#22d3ee" opacity=".15" />
+            <circle cx="44" cy="28" r="12" fill="#22d3ee" opacity=".3" />
+            <text x="44" y="33" font-size="12" text-anchor="middle" fill="#22d3ee">🤖</text>
+            <rect x="62" y="22" width="80" height="7" rx="4" fill="#22d3ee" opacity=".6" />
+            <rect x="62" y="33" width="50" height="5" rx="3" fill="#e5e7eb" opacity=".3" />
+            <circle cx="360" cy="28" r="6" fill="#22d3ee" opacity=".4" />
+            <!-- bot message -->
+            <rect x="32" y="56" width="180" height="32" rx="10" fill="#22d3ee" opacity=".15" stroke="#22d3ee"
+              stroke-width=".5" />
+            <rect x="40" y="63" width="140" height="6" rx="3" fill="#22d3ee" opacity=".7" />
+            <rect x="40" y="74" width="100" height="5" rx="3" fill="#e5e7eb" opacity=".4" />
+            <!-- user message -->
+            <rect x="200" y="98" width="160" height="22" rx="10" fill="#c084fc" opacity=".2" stroke="#c084fc"
+              stroke-width=".5" />
+            <rect x="210" y="106" width="120" height="6" rx="3" fill="#c084fc" opacity=".7" />
+            <!-- bot reply -->
+            <rect x="32" y="130" width="220" height="40" rx="10" fill="#22d3ee" opacity=".1" stroke="#22d3ee"
+              stroke-width=".5" />
+            <rect x="40" y="138" width="160" height="6" rx="3" fill="#22d3ee" opacity=".6" />
+            <rect x="40" y="149" width="110" height="5" rx="3" fill="#e5e7eb" opacity=".4" />
+            <rect x="40" y="158" width="80" height="5" rx="3" fill="#e5e7eb" opacity=".3" />
+            <!-- input bar -->
+            <rect x="28" y="174" width="280" height="5" rx="3" fill="#22d3ee" opacity=".1" />
+            <rect x="318" y="170" width="50" height="12" rx="6" fill="#c084fc" opacity=".6" />
+            <!-- neural nodes decoration -->
+            <circle cx="370" cy="80" r="3" fill="#c084fc" opacity=".5" />
+            <circle cx="385" cy="100" r="2" fill="#22d3ee" opacity=".5" />
+            <circle cx="375" cy="120" r="3" fill="#c084fc" opacity=".4" />
+            <line x1="370" y1="80" x2="385" y2="100" stroke="#c084fc" stroke-width=".5" opacity=".4" />
+            <line x1="385" y1="100" x2="375" y2="120" stroke="#22d3ee" stroke-width=".5" opacity=".4" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <h3>AI Chatbot Interface</h3>
+          <p>A conversational AI chatbot UI built with Python and JavaScript. Features real-time message rendering, bot
+            response simulation, and a clean chat window with typing indicators.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>AI/ML</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/HarshAgrahari07" target="_blank" class="proj-btn">⌥ GitHub</a>
+            <span class="proj-date">Jan 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Data Dashboard -->
+      <div class="proj-card">
+        <div class="proj-img">
+          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+            <defs>
+              <linearGradient id="pg3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0b0b18" />
+                <stop offset="100%" style="stop-color:#12122a" />
+              </linearGradient>
+              <linearGradient id="bar1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#c084fc" />
+                <stop offset="100%" style="stop-color:#7c3aed" />
+              </linearGradient>
+              <linearGradient id="bar2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#22d3ee" />
+                <stop offset="100%" style="stop-color:#0891b2" />
+              </linearGradient>
+            </defs>
+            <rect width="400" height="200" fill="url(#pg3)" />
+            <!-- top stat cards -->
+            <rect x="15" y="12" width="78" height="42" rx="8" fill="#1e1e35" stroke="#c084fc" stroke-width=".8" />
+            <text x="25" y="28" font-family="Arial" font-size="8" fill="#c084fc" opacity=".7">ACCURACY</text>
+            <text x="25" y="46" font-family="Arial" font-size="16" font-weight="bold" fill="#c084fc">94.2%</text>
+            <rect x="103" y="12" width="78" height="42" rx="8" fill="#1e1e35" stroke="#22d3ee" stroke-width=".8" />
+            <text x="113" y="28" font-family="Arial" font-size="8" fill="#22d3ee" opacity=".7">DATASETS</text>
+            <text x="113" y="46" font-family="Arial" font-size="16" font-weight="bold" fill="#22d3ee">1,240</text>
+            <rect x="191" y="12" width="78" height="42" rx="8" fill="#1e1e35" stroke="#c084fc" stroke-width=".8" />
+            <text x="201" y="28" font-family="Arial" font-size="8" fill="#c084fc" opacity=".7">MODELS</text>
+            <text x="201" y="46" font-family="Arial" font-size="16" font-weight="bold" fill="#c084fc">3</text>
+            <rect x="279" y="12" width="105" height="42" rx="8" fill="#1e1e35" stroke="#22d3ee" stroke-width=".8" />
+            <text x="289" y="28" font-family="Arial" font-size="8" fill="#22d3ee" opacity=".7">RUNTIME</text>
+            <text x="289" y="46" font-family="Arial" font-size="16" font-weight="bold" fill="#22d3ee">0.3s</text>
+            <!-- bar chart -->
+            <rect x="15" y="65" width="230" height="115" rx="8" fill="#16162a" stroke="#c084fc" stroke-width=".5"
+              opacity=".6" />
+            <text x="25" y="80" font-family="Arial" font-size="8" fill="#e5e7eb" opacity=".5">Monthly Data
+              Insights</text>
+            <!-- bars -->
+            <rect x="30" y="120" width="18" height="50" rx="3" fill="url(#bar1)" opacity=".8" />
+            <rect x="58" y="105" width="18" height="65" rx="3" fill="url(#bar2)" opacity=".8" />
+            <rect x="86" y="115" width="18" height="50" rx="3" fill="url(#bar1)" opacity=".8" />
+            <rect x="114" y="95" width="18" height="75" rx="3" fill="url(#bar2)" opacity=".8" />
+            <rect x="142" y="108" width="18" height="62" rx="3" fill="url(#bar1)" opacity=".8" />
+            <rect x="170" y="90" width="18" height="80" rx="3" fill="url(#bar2)" opacity=".8" />
+            <rect x="198" y="100" width="18" height="70" rx="3" fill="url(#bar1)" opacity=".8" />
+            <!-- line chart -->
+            <rect x="255" y="65" width="130" height="115" rx="8" fill="#16162a" stroke="#22d3ee" stroke-width=".5"
+              opacity=".6" />
+            <text x="265" y="80" font-family="Arial" font-size="8" fill="#e5e7eb" opacity=".5">Prediction Curve</text>
+            <polyline points="268,160 285,145 305,130 322,120 340,110 360,95 375,88" stroke="#22d3ee" stroke-width="2"
+              fill="none" stroke-linecap="round" />
+            <polyline points="268,160 285,148 305,140 322,135 340,125 360,115 375,108" stroke="#c084fc"
+              stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="4" />
+            <circle cx="375" cy="88" r="3" fill="#22d3ee" />
+            <circle cx="375" cy="108" r="3" fill="#c084fc" />
+          </svg>
+        </div>
+        <div class="proj-body">
+          <h3>Data Analytics Dashboard</h3>
+          <p>An interactive data analytics dashboard using Python and MySQL. Visualizes datasets with charts, prediction
+            curves, and key metrics — applying concepts from Data Science and AI/ML coursework.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>MySQL</span><span>Data Science</span><span>AI/ML</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/HarshAgrahari07" target="_blank" class="proj-btn">⌥ GitHub</a>
+            <span class="proj-date">Mar 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="training" class="reveal">
+    <h1>Training</h1>
+    <div class="edu-timeline">
+      <div class="edu-card">
+        <div class="edu-icon">💻</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>Full Stack</h3>
+            <span class="edu-date">2025</span>
+          </div>
+          <p class="edu-degree">Training Program</p>
+          <p class="edu-location">📍 Online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="reveal">
+    <h1>Certifications</h1>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h2>Python Programming</h2>
+        <p>Saylor • Feb 2026</p>
+        <a href="Python Certificate.pdf" target="_blank" class="cert-btn">View</a>
+      </div>
+      <div class="cert-card">
+        <h2>Intro To Data Science</h2>
+        <p>Cisco • Dec 2025</p>
+        <a href="Data Science Certificate.pdf" target="_blank" class="cert-btn">View</a>
+      </div>
+      <div class="cert-card">
+        <h2>Artificial Intelligence</h2>
+        <p>Infosys • Mar 2026</p>
+        <a href="Intro to AI Certificate.pdf" target="_blank" class="cert-btn">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="reveal">
+    <h1>Certificates</h1>
+    <div class="cert-img-grid">
+
+      <div class="cert-img-card">
+        <div class="cert-img-wrap" onclick="openLightbox('Screenshot 2026-04-21 044301.png')">
+          <img src="Screenshot 2026-04-21 044301.png" alt="Basics of Training & Leadership - CIQ UniAthena" />
+          <div class="cert-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="cert-img-info">
+          <h3>Basics of Training & Leadership</h3>
+          <p>UniAthena × Cambridge IQ &nbsp;•&nbsp; Oct 2025</p>
+        </div>
+      </div>
+
+      <div class="cert-img-card">
+        <div class="cert-img-wrap" onclick="openLightbox('Screenshot 2026-04-21 044144.png')">
+          <img src="Screenshot 2026-04-21 044144.png" alt="Basics of Web Development - Gnanavasi Technology" />
+          <div class="cert-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="cert-img-info">
+          <h3>Basics of Web Development</h3>
+          <p>Gnanavasi Technology &nbsp;•&nbsp; Jan 2026</p>
+        </div>
+      </div>
+
+      <div class="cert-img-card">
+        <div class="cert-img-wrap" onclick="openLightbox('Certificate_260421_184444.jpg')">
+          <img src="Certificate_260421_184444.jpg" alt="SkillQuest - Generative AI Literacy - Simplilearn SkillUP" />
+          <div class="cert-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="cert-img-info">
+          <h3>SkillQuest - Generative AI Literacy</h3>
+          <p>Simplilearn SkillUP &nbsp;•&nbsp; Apr 2026</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="hackathons" class="reveal">
+    <h1>Hackathons</h1>
+    <div class="hack-grid">
+      <div class="hack-card">
+        <div class="hack-cert-wrap" onclick="openLightbox('8b301e8e-4b1b-4360-8809-a367cd671dbd.png')">
+          <img src="8b301e8e-4b1b-4360-8809-a367cd671dbd.png" alt="CODECARVAN 3.0 Certificate"
+            class="hack-cert-img" />
+          <div class="hack-overlay">
+            <span>🔍 View Certificate</span>
+          </div>
+        </div>
+        <div class="hack-body">
+          <div class="hack-badge">🏫 University Level</div>
+          <h3>CODECARVAN 3.0</h3>
+          <p>A 24-hour Hackathon organized by <span style="color:#22d3ee">Coding Blocks</span> and <span
+              style="color:#22d3ee">LPU</span>.
+            Recognized for demonstrating exceptional coding skills, innovation, and collaborative problem-solving.</p>
+          <div class="hack-meta">
+            <span>📅 14–15 Nov 2025</span>
+            <span>📍 LPU, Punjab</span>
+          </div>
+          <div class="hack-orgs">
+            <span>Coding Blocks</span><span>LPU</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hack-card">
+        <div class="hack-cert-wrap" onclick="openLightbox('e0e3b864-fd7e-4a23-bd5a-1ca5493f4b7c.png')">
+          <img src="e0e3b864-fd7e-4a23-bd5a-1ca5493f4b7c.png" alt="Code-A-Haunt 3.0 Certificate"
+            class="hack-cert-img" />
+          <div class="hack-overlay">
+            <span>🔍 View Certificate</span>
+          </div>
+        </div>
+        <div class="hack-body">
+          <div class="hack-badge">🏆 National Level</div>
+          <h3>Code-A-Haunt 3.0</h3>
+          <p>National-Level Inter-University Hackathon organized by <span style="color:#22d3ee">CodingBlocks LPU</span>
+            at Lovely Professional University. Showcased exceptional skills in coding and problem-solving.</p>
+          <div class="hack-meta">
+            <span>📅 13–14 Mar 2026</span>
+            <span>📍 LPU, Punjab</span>
+          </div>
+          <div class="hack-orgs">
+            <span>SkillSeva</span><span>Wipro</span><span>Collabify LPU</span><span>Govt. of India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="achievements" class="reveal">
+    <h1>Achievements</h1>
+    <div class="achieve-intro">
+      <p>Workshops attended at <span style="color:#22d3ee;font-weight:bold">Code-A-Haunt 3.0</span> — National-Level
+        Inter-University Hackathon, CodingBlocks LPU &nbsp;|&nbsp; 📅 Mar 13–14, 2026</p>
+    </div>
+    <div class="achieve-grid">
+
+      <div class="achieve-card">
+        <div class="achieve-img-wrap" onclick="openLightbox('24926b71-9d48-4768-89ca-fd7c09c190e9.png')">
+          <img src="24926b71-9d48-4768-89ca-fd7c09c190e9.png" alt="UI &amp; UX Workshop Certificate"
+            class="achieve-img" />
+          <div class="achieve-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="achieve-label">
+          <span class="achieve-icon">🎨</span>
+          <div>
+            <h4>Workshop on UI & UX</h4>
+            <p>Code-A-Haunt 3.0 · CodingBlocks LPU</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achieve-card">
+        <div class="achieve-img-wrap" onclick="openLightbox('3f52f767-445f-46d3-a539-3dbb5e37debc.png')">
+          <img src="3f52f767-445f-46d3-a539-3dbb5e37debc.png" alt="Web Development Workshop Certificate"
+            class="achieve-img" />
+          <div class="achieve-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="achieve-label">
+          <span class="achieve-icon">🌐</span>
+          <div>
+            <h4>Workshop on Web Development</h4>
+            <p>Code-A-Haunt 3.0 · CodingBlocks LPU</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achieve-card">
+        <div class="achieve-img-wrap" onclick="openLightbox('67ef331e-cda6-4d5e-8a5d-68698d167c6a.png')">
+          <img src="67ef331e-cda6-4d5e-8a5d-68698d167c6a.png" alt="Data Science Workshop Certificate"
+            class="achieve-img" />
+          <div class="achieve-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="achieve-label">
+          <span class="achieve-icon">📊</span>
+          <div>
+            <h4>Workshop on Data Science</h4>
+            <p>Code-A-Haunt 3.0 · CodingBlocks LPU</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="achieve-card">
+        <div class="achieve-img-wrap" onclick="openLightbox('60013580-1ceb-4753-b7df-e5a3f3826048.png')">
+          <img src="60013580-1ceb-4753-b7df-e5a3f3826048.png" alt="DSA Workshop Certificate" class="achieve-img" />
+          <div class="achieve-overlay">🔍 View Certificate</div>
+        </div>
+        <div class="achieve-label">
+          <span class="achieve-icon">🧠</span>
+          <div>
+            <h4>Workshop on DSA</h4>
+            <p>Code-A-Haunt 3.0 · CodingBlocks LPU</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="education" class="reveal">
+    <h1>Education</h1>
+    <div class="edu-timeline">
+
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>Lovely Professional University</h3>
+            <span class="edu-date">Aug 2025 – July 2029</span>
+          </div>
+          <p class="edu-degree">Bachelor of Technology — Computer Science Engineering (AI & ML)</p>
+          <p class="edu-location">📍 Jalandhar, Punjab</p>
+          <div class="edu-badge">TGPA: 7.50</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">📘</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>S R A P College</h3>
+            <span class="edu-date">Apr 2022 – Feb 2024</span>
+          </div>
+          <p class="edu-degree">Intermediate (Class XII)</p>
+          <p class="edu-location">📍 Bara Chakia, Bihar</p>
+          <div class="edu-badge">Percentage: 72%</div>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-icon">📗</div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <h3>C M Memorial High School</h3>
+            <span class="edu-date">Apr 2021 – Feb 2022</span>
+          </div>
+          <p class="edu-degree">Matriculation (Class X)</p>
+          <p class="edu-location">📍 Motihari, Bihar</p>
+          <div class="edu-badge">Percentage: 87%</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="resume" class="reveal">
+    <h1>Resume</h1>
+    <div class="resume-section">
+      <div class="resume-img-wrap">
+        <img src="Harsh Resume.jpg" alt="Harsh Kumar Resume" class="resume-preview" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h1>Get In Touch</h1>
+    <div class="contact-container">
+      <div class="contact-card">
+
+        <!-- Info -->
+        <div class="contact-info-row">
+          <div class="contact-info-item">
+            <span class="ci-icon">📞</span>
+            <a href="tel:+918864079900">+91 8864079900</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="ci-icon">🌏</span>
+            <span>Chakia, East Champaran, Bihar</span>
+          </div>
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <!-- Social Icons -->
+        <div class="contact-social">
+          <!-- GitHub -->
+          <a href="https://github.com/HarshAgrahari07" target="_blank" class="social-icon" title="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+          <!-- Email -->
+          <a href="mailto:harshagrahari845412@gmail.com" class="social-icon" title="Email Me">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/harsh-kumar-ba268b321/" target="_blank" class="social-icon"
+            title="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <!-- Message Form -->
+        <form action="mailto:harshagrahari845412@gmail.com" method="post" enctype="text/plain">
+          <div class="contact-msg-label">Send me a message 👇</div>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+          <textarea name="Message" placeholder="Your Message . . ." required></textarea>
+          <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="contact-footer">
+    © 2026 <span>HARSH KUMAR</span> • Built with ♥
+  </footer>
+
+  <button class="top-btn" onclick="scrollToTop()">⇧</button>
+
+  <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
